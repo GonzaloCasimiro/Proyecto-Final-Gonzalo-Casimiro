@@ -1,0 +1,68 @@
+.nosotros{
+    &__objetivo,&__nosotros{
+        background-color: $colordos;
+        max-width: 100%;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10%;
+        margin: 15px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+        .h2__nosotros{
+            font-size: 40px;
+            color:$coloruno;
+            animation:rebote .5s alternate infinite ease-in;
+        }
+        .p__nosotros{
+            color:white;
+            font-size: 40px;
+        }
+        .fa-bullseye,.fa-people-group{
+            color:$coloruno;
+            font-size: 40px;
+            animation:salto .5s alternate infinite ease-in;
+        }
+    }
+    &__confianza,&__mision{
+        background-color: $coloruno;
+        max-width: 100%;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10%;
+        margin: 15px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+        .h2__nosotros{
+            font-size: 40px;
+            color:$colordos;
+            animation:rebote .5s alternate infinite ease-in;
+        }
+        .p__nosotros{
+            color:white;
+            font-size: 40px;
+        }
+        .fa-handshake-simple,.fa-glasses{
+            color:$colordos;
+            font-size: 40px;
+            animation:salto .5s alternate infinite ease-in;
+        }
+    }
+}
+@keyframes rebote{
+    0%{
+        transform: translatex(-0.5%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+@keyframes salto{
+    0%{
+        transform: translatey(10%);
+    }
+    100%{
+        transform: translatey(0%);
+    }
+}

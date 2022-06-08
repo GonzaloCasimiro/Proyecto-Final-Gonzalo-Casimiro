@@ -1,0 +1,54 @@
+.contactos{
+    background-size: cover;
+    background-image: url(../img/papper.jpg);
+    & &__section{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    .contacto__card{
+            background-color: $colordos;
+            border:solid white;
+            border-top:$colordos;
+            max-width: 880px;
+            max-height: 800px;
+            color:white;
+            &-titulo{
+                color: white;
+                text-align: center;
+            }
+            &-info{
+                color:$colordos;
+                background-color: $coloruno;
+                display:flex;
+            }
+            .contact{
+                text-align: center;
+                max-width: 400px;
+                &-form{
+                    p{
+                        input,textarea,button{
+                            background-color: #fff;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info{
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        word-spacing: 6px;
+        line-height: 50px;
+        max-width: 300px;
+        &__lista{
+            flex-direction:column;
+            font-size: 15px;
+        }
+        
+    }
+}
