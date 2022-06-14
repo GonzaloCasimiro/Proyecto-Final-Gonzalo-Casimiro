@@ -37,11 +37,8 @@
     }
     .info{
         text-align: center;
-        display:flex;
-        flex-direction: column;
+        @include column-center;
         justify-content: center;
-        align-items: center;
-        align-content: center;
         word-spacing: 6px;
         line-height: 50px;
         max-width: 300px;

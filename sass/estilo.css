@@ -1,3 +1,30 @@
+.preguntasfrecuentes {
+  background-color: #FF7700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.preguntasfrecuentes .notebook, .preguntasfrecuentes .signodeinterrogacion {
+  max-height: 800px;
+  max-width: 400px;
+}
+
+.preguntasfrecuentes .accordion-item .accordion-header {
+  background-color: #FF7700;
+}
+
+.preguntasfrecuentes .accordion-item .accordion-header .accordion-button {
+  background-color: #FF7700;
+  font-size: 20px;
+}
+
+.preguntasfrecuentes .accordion-item .accordion-collapse .accordion-body {
+  background-color: #FF7700;
+  color: #112b3c;
+  font-size: 15px;
+}
+
 .contactos {
   background-size: cover;
   background-image: url(../img/papper.jpg);
@@ -195,6 +222,248 @@
   }
 }
 
+.card__section {
+  max-height: 2500px;
+  max-width: 1378px;
+  padding: 0;
+  margin: 0;
+  background-color: #FF7700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__section .card {
+  max-width: 400px;
+  max-height: 700px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
+}
+
+.card__section .card__top {
+  max-height: 400px;
+}
+
+.card__section .card__top .card__img {
+  width: 500px;
+  height: 300px;
+}
+
+.card__section .card__contenido {
+  height: 500px;
+  background-color: #112b3c;
+  color: white;
+  text-align: center;
+}
+
+.card__section .card__contenido .card__h2 {
+  color: #FF7700;
+  font-size: 35px;
+}
+
+.card__section .card__contenido .card__p {
+  color: white;
+  font-size: 30px;
+}
+
+.card__section .card:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 576px) {
+  .body__index {
+    max-width: 576px;
+  }
+  .body__index .portada {
+    display: none;
+  }
+  .body__index .imagenes {
+    max-width: 576px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    background-color: #FF7700;
+    max-height: 2000px;
+  }
+  .body__index .imagenes .card {
+    max-width: 240px;
+    max-height: 400px;
+    margin: 10px;
+  }
+  .body__index .imagenes .card-body .btnprimary {
+    font-size: 15px;
+  }
+  .body__index .imagenes .imagenes__lista {
+    max-width: 240px;
+    max-height: 400px;
+  }
+  .body__index .imagenes .imagenes__lista ul {
+    font-size: 25px;
+    line-height: 62px;
+  }
+  .nosotros__objetivo .h2__nosotros, .nosotros__objetivo .p__nosotros, .nosotros__objetivo .fa-bullseye, .nosotros__objetivo .fa-people-group, .nosotros__objetivo .fa-handshake-simple, .nosotros__objetivo .fa-glasses, .nosotros__nosotros .h2__nosotros, .nosotros__nosotros .p__nosotros, .nosotros__nosotros .fa-bullseye, .nosotros__nosotros .fa-people-group, .nosotros__nosotros .fa-handshake-simple, .nosotros__nosotros .fa-glasses, .nosotros__confianza .h2__nosotros, .nosotros__confianza .p__nosotros, .nosotros__confianza .fa-bullseye, .nosotros__confianza .fa-people-group, .nosotros__confianza .fa-handshake-simple, .nosotros__confianza .fa-glasses, .nosotros__mision .h2__nosotros, .nosotros__mision .p__nosotros, .nosotros__mision .fa-bullseye, .nosotros__mision .fa-people-group, .nosotros__mision .fa-handshake-simple, .nosotros__mision .fa-glasses {
+    font-size: 25px;
+  }
+  .preguntasfrecuentes {
+    background-color: #FF7700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .preguntasfrecuentes .notebook, .preguntasfrecuentes .signodeinterrogacion {
+    display: none;
+  }
+  .preguntasfrecuentes .accordion-item .accordion-header {
+    background-color: #FF7700;
+  }
+  .preguntasfrecuentes .accordion-item .accordion-header .accordion-button {
+    background-color: #FF7700;
+    font-size: 20px;
+  }
+  .preguntasfrecuentes .accordion-item .accordion-collapse .accordion-body {
+    background-color: #112b3c;
+    color: #FF7700;
+    font-size: 15px;
+  }
+  .contactos .info {
+    margin: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .contactos .info__lista {
+    font-size: 25px;
+    word-spacing: 5px;
+  }
+  .card__section {
+    padding: 10%;
+    max-width: 576px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .card__section .card {
+    max-width: 450px;
+    max-height: 450px;
+  }
+  .card__section .card__top {
+    width: 450px;
+    max-height: 250px;
+  }
+  .card__section .card__top .card__img {
+    width: 450px;
+    max-height: 250px;
+  }
+  .card__section .card__contenido {
+    max-height: 250px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .body__index {
+    max-width: 992px;
+  }
+  .body__index .portada {
+    max-width: 992px;
+    min-height: 500px;
+  }
+  .body__index .portada .div__portada {
+    max-width: 992px;
+    min-height: 500px;
+  }
+  .body__index .imagenes {
+    max-width: 992px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    background-color: #FF7700;
+    max-height: 2000px;
+  }
+  .body__index .imagenes .card {
+    max-width: 400px;
+    max-height: 600px;
+    margin: 10px;
+  }
+  .body__index .imagenes .card-body .btnprimary {
+    font-size: 15px;
+  }
+  .body__index .imagenes .imagenes__lista {
+    max-width: 400px;
+    max-height: 600px;
+  }
+  .body__index .imagenes .imagenes__lista ul {
+    font-size: 25px;
+    line-height: 80px;
+  }
+  .nosotros__objetivo .h2__nosotros, .nosotros__objetivo .p__nosotros, .nosotros__objetivo .fa-bullseye, .nosotros__objetivo .fa-people-group, .nosotros__objetivo .fa-handshake-simple, .nosotros__objetivo .fa-glasses, .nosotros__nosotros .h2__nosotros, .nosotros__nosotros .p__nosotros, .nosotros__nosotros .fa-bullseye, .nosotros__nosotros .fa-people-group, .nosotros__nosotros .fa-handshake-simple, .nosotros__nosotros .fa-glasses, .nosotros__confianza .h2__nosotros, .nosotros__confianza .p__nosotros, .nosotros__confianza .fa-bullseye, .nosotros__confianza .fa-people-group, .nosotros__confianza .fa-handshake-simple, .nosotros__confianza .fa-glasses, .nosotros__mision .h2__nosotros, .nosotros__mision .p__nosotros, .nosotros__mision .fa-bullseye, .nosotros__mision .fa-people-group, .nosotros__mision .fa-handshake-simple, .nosotros__mision .fa-glasses {
+    font-size: 20px;
+  }
+  .card__section {
+    padding: 5%;
+    max-width: 992px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .card__section .card {
+    max-width: 400px;
+    max-height: 550px;
+  }
+  .card__section .card__top {
+    max-width: 400px;
+    max-height: 250px;
+  }
+  .card__section .card__top .card__img {
+    max-width: 400px;
+    max-height: 250px;
+  }
+  .card__section .card__contenido {
+    height: 300px;
+  }
+  .card__section .card__contenido .card__h2, .card__section .card__contenido .card__p {
+    font-size: 23px;
+  }
+  .preguntasfrecuentes {
+    background-color: #FF7700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .preguntasfrecuentes .notebook {
+    display: none;
+  }
+  .preguntasfrecuentes .signodeinterrogacion {
+    max-height: 1030px;
+    max-width: 300px;
+  }
+  .contactos .info .info__lista li {
+    line-height: 10px;
+  }
+  .contactos .info .info__parrafo, .contactos .info .info__h3 {
+    line-height: 15px;
+    font-size: 20px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -224,18 +493,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .portada div h2 {
@@ -261,6 +530,13 @@
 }
 
 .imagenes .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 400px;
   max-height: 800px;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.9);
@@ -272,9 +548,21 @@
   background-color: #112b3c;
   color: #FF7700;
   border: solid #112b3c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-.imagenes .card .card-body .btnprimarty {
+.imagenes .card .card-body .btnprimary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 20px;
   color: #112b3c;
   background-color: #FF7700;

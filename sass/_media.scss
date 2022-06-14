@@ -1,0 +1,196 @@
+@media (max-width: 576px) {
+    .body__index{
+        max-width: 576px;
+        .portada{
+            display:none;
+        }
+        .imagenes{
+            max-width: 576px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            background-color:$colordos;
+            max-height: 2000px;
+            .card{
+                max-width: 240px;
+                max-height: 400px;
+                margin:10px;
+                &-body{
+                    .btnprimary{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .imagenes__lista{
+                max-width: 240px;
+                max-height: 400px;
+                ul{
+                    font-size: 25px;
+                    line-height: 62px;
+                }
+            }
+        }
+    }
+    .nosotros{
+        &__objetivo,&__nosotros,&__confianza,&__mision{
+            .h2__nosotros,.p__nosotros,.fa-bullseye,.fa-people-group,.fa-handshake-simple,.fa-glasses{
+                font-size: 25px;
+            }
+        }
+    }
+    .preguntasfrecuentes{
+        background-color: $colordos;
+        display: flex;
+        .notebook,.signodeinterrogacion{
+            display:none;
+        }
+        .accordion{
+            &-item{
+                .accordion-header{
+                    background-color: $colordos;
+                    .accordion-button{
+                        background-color: $colordos;
+                        font-size: 20px;
+                    }
+                }
+            .accordion-collapse{
+                .accordion-body{
+                    background-color:$coloruno;
+                    color:$colordos;
+                    font-size: 15px;
+                }
+            }
+            }
+        }
+    }
+    .contactos{
+        .info{
+            margin:30px;
+            justify-content: space-between;
+            font-size: 20px;
+            line-height: 20px;
+            &__lista{
+                font-size: 25px;
+                word-spacing: 5px;
+            }
+        }
+    }
+    .card__section{
+        padding: 10%;
+        max-width: 576px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr) ; 
+        .card{
+            max-width: 450px;
+            max-height: 450px;
+            &__top{
+                width: 450px;
+                max-height: 250px;
+                .card__img{
+                    width: 450px;
+                    max-height: 250px;
+                }
+            }
+            &__contenido{
+                max-height: 250px;
+            }
+        }
+    }
+}
+@media(min-width: 576px) and (max-width: 992px) {
+    .body__index{
+        max-width: 992px;
+        .portada{
+            max-width: 992px;
+            min-height: 500px;
+            .div__portada{
+            max-width: 992px;
+            min-height: 500px;
+            }
+        }
+        .imagenes{
+            max-width: 992px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            background-color:$colordos;
+            max-height: 2000px;
+            .card{
+                max-width: 400px;
+                max-height: 600px;
+                margin:10px;
+                &-body{
+                    .btnprimary{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .imagenes__lista{
+                max-width: 400px;
+                max-height: 600px;
+                ul{
+                    font-size: 25px;
+                    line-height: 80px;
+                }
+            }
+        }
+    }
+    .nosotros{
+        &__objetivo,&__nosotros,&__confianza,&__mision{
+            .h2__nosotros,.p__nosotros,.fa-bullseye,.fa-people-group,.fa-handshake-simple,.fa-glasses{
+                font-size: 20px;
+            }
+        }
+    }
+    .card__section{
+        padding:5%;
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr) ; 
+        .card{
+            max-width: 400px ;
+            max-height: 550px;
+            &__top{
+                max-width: 400px ;
+                max-height: 250px;
+                .card__img{
+                    max-width: 400px ;
+                    max-height: 250px;
+                }
+            }
+            &__contenido{
+                height: 300px;
+                .card__h2,.card__p{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    .preguntasfrecuentes{
+        background-color: $colordos;
+        display: flex;
+        .notebook{
+            display:none;
+        }
+        .signodeinterrogacion{
+            max-height: 1030px;
+            max-width: 300px;
+        }
+    }
+    .contactos{
+        .info{
+            .info__lista{
+                li{
+                    line-height: 10px;
+                }
+            }
+            .info__parrafo,.info__h3{
+                line-height: 15px;
+                font-size: 20px;
+            }
+        }
+
+    }
+}

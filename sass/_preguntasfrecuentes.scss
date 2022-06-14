@@ -1,0 +1,26 @@
+.preguntasfrecuentes{
+    background-color: $colordos;
+    display: flex;
+    .notebook,.signodeinterrogacion{
+        max-height: 800px;
+        max-width: 400px;
+    }
+    .accordion{
+        &-item{
+            .accordion-header{
+                background-color: $colordos;
+                .accordion-button{
+                    background-color: $colordos;
+                    font-size: 20px;
+                }
+            }
+        .accordion-collapse{
+            .accordion-body{
+                background-color: $colordos;
+                color:$coloruno;
+                font-size: 15px;
+            }
+        }
+        }
+    }
+}

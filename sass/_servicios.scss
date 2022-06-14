@@ -1,0 +1,44 @@
+
+.servicios__main{
+    .card__section{
+        max-height: 2500px;
+        max-width: 1378px;
+        padding: 0;
+        margin: 0;
+        background-color: $colordos;
+        display: flex;
+        .card{
+            max-width:400px;
+            max-height:700px;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #fff;
+            @include sombras;
+            &__top{
+                max-height: 400px;
+                .card__img{
+                    max-width:100%;
+                    height: 300px;
+                }
+            }
+            &__contenido{
+                height: 500px;
+                background-color: $coloruno;
+                color:white;
+                text-align: center;
+                .card__h2{
+                    color:$colordos;
+                    font-size: 35px;
+                }
+                .card__p{
+                    color:white;
+                    font-size: 30px;
+                }
+            }
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+            }
+        }
+    }
+}
