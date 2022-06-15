@@ -1,44 +1,72 @@
 
-.servicios__main{
-    .card__section{
-        max-height: 2500px;
-        max-width: 1378px;
-        padding: 0;
-        margin: 0;
-        background-color: $colordos;
-        display: flex;
-        .card{
-            max-width:400px;
-            max-height:700px;
-            margin: 20px;
-            border-radius: 6px;
-            overflow: hidden;
-            background-color: #fff;
-            @include sombras;
-            &__top{
-                max-height: 400px;
-                .card__img{
-                    max-width:100%;
-                    height: 300px;
-                }
+
+.card__section{
+    max-height: 2500px;
+    max-width: 1378px;
+    padding: 0;
+    margin: 0;
+    background-color: $colordos;
+    display: flex;
+    .card{
+        min-width:300px;
+        max-height:700px;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+        @include sombras;
+        &__top{
+            max-height: 400px;
+            .card__img{
+                max-width:100%;
+                height: 300px;
             }
-            &__contenido{
-                height: 500px;
-                background-color: $coloruno;
+        }
+        &__contenido{
+            height: 500px;
+            background-color: $coloruno;
+            color:white;
+            text-align: center;
+            .card__h2{
+                color:$colordos;
+                font-size: 35px;
+            }
+            .card__p{
                 color:white;
-                text-align: center;
-                .card__h2{
-                    color:$colordos;
-                    font-size: 35px;
-                }
-                .card__p{
-                    color:white;
-                    font-size: 30px;
-                }
+                font-size: 30px;
             }
-            &:hover{
-                box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
-            }
+        }
+        &:hover{
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+        }
+    }
+}
+.profesionales{
+    max-width: 100%;
+    background-color: $colordos;
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+    }
+    .cards{
+        display:flex;
+        justify-content: space-between;
+        .card-uno{
+            @extend %card;
+            @extend %card-uno;
+        }
+        .card-dos{
+            @extend %card;
+            @extend %card-dos;
+        }
+        .card-tres{
+            @extend %card;
+            @extend %card-uno;
+        }
+        .card-cuatro{
+            @extend %card;
+            @extend %card-dos;
         }
     }
 }
