@@ -15,11 +15,6 @@ $colordos: #FF7700;
     padding:0;
     box-sizing: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    .body{
-        max-height: 2000px;
-    }
-    
 }
 .h1-titulo{ 
     font-size: 25px;
@@ -158,10 +153,11 @@ footer{
         width:180px;
         height: 150px;
         background-size: cover;
-        border-radius: 20%;
+        border-radius: 50%;
     }
     .card__bot{
-        border-radius: 10%;
+        border-bottom-right-radius: 20%;
+        border-bottom-left-radius: 20%;
         text-align: center;
         height:135px;
         h2{
@@ -174,22 +170,25 @@ footer{
     }
 }
 %card-uno{
-    background-color: black;
+    background-color: #fff;
     .card__img{
         background-image: url(../img/siluetahombre.jpg);
     }
     .card__bot{
-        background-color: black;
-        color:white;
+        border-top: solid black;
+        background-color: #fff;
+        color:black;
     }
 }
 %card-dos{
-    background-color: #fff;
+    border:solid #fff;
+    background-color: black;
     .card__img{
         background-image: url(../img/siluetamujer.jpg);
     }
     .card__bot{
-        background-color: white;
-        color:black;
+        border-top: solid #fff;
+        background-color: black;
+        color:#fff;
     }
 }
